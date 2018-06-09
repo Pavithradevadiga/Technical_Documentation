@@ -73,14 +73,15 @@ code{
  padding-top: 25px;
   margin-bottom: 5px;
   background: darkgrey;
-  height: 75px;
+  height: 85px;
   display: block;
   border-radius: 5px;
   text-align: left;
-   
+   font-size: 25px;
 }
 section{
   padding-top: 15px;
+  font-size: 20px;
 }
 li{
   font-family: Lucida Fax;
