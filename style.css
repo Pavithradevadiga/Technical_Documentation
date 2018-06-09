@@ -1,0 +1,111 @@
+
+body{
+  background: lightgrey;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    @media only screen and (max-width: 600px) {
+      background: blue;
+    }
+}
+
+
+#navbar{
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  overflow: auto;
+  z-index: 1;
+  border-right: 10px solid brown;
+  overflow-x: hidden;
+  text-align: left;
+}
+#navheader{
+  color: darkbrown;
+  font-size: 30px;
+  font-famliy: arial;
+ text-align: center;
+}
+
+#navbar ul{
+  list-style: none;
+  text-decoration: black underline;
+  width: 90%;
+  margin: 0px;
+  font-size: 40px;
+  
+}
+#navbar li{
+  display: block;
+  padding: 10px 20px;
+ 
+}
+#navbar a{
+  text-decoration: none;
+  color: #879BAF ;
+  font-size: 30px;
+  font-family: Tahoma;
+  
+}
+#navbar li a:hover {
+    background-color: green;
+  color: white;
+}
+#main-section{
+  font-size: 20px;
+  padding-left: 30%;
+  font-size: 15px;
+   
+}
+#main-section header{
+  font-size: 50px;
+  text-decoration: #879BAF overline;
+  font-family: Lucida Sans;
+  color: brown;
+  
+}
+h2{
+  font-family: monospace; 
+}
+code{
+  box-shadow: 5px 10px 20px red inset;
+ padding-top: 25px;
+  margin-bottom: 5px;
+  background: darkgrey;
+  height: 75px;
+  display: block;
+  border-radius: 5px;
+  text-align: left;
+   
+}
+section{
+  padding-top: 15px;
+}
+li{
+  font-family: Lucida Fax;
+}
+h4{
+  font-family: lobster;
+}
+a:hover{
+  color: green;
+}
+.six ul{
+  width: 500px;
+  height: 200px;
+  background: grey;
+  box-shadow: 5px 10px 20px blue inset;
+  border-radius: 15px;
+   padding-top: 25px;
+  margin-bottom: 5px;
+  
+}
+.six li{
+  display: flex;
+ padding: 4px;
+  font-weight: bold;
+}
+.me{
+  padding-left: 50%;
+}

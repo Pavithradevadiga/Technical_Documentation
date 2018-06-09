@@ -1,0 +1,99 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+<!--Navibar on the left side-->
+<body>
+<nav id="navbar">
+  <header id="navheader"><h1> Technical documentation of Python<h1></header>
+  <ul class="nav-list">
+    <li><a href="#What_is_Python?" class="nav-link">What is Python?</a></li>
+    <li><a href="#History" class="nav-link">History</a></li>
+    <li><a href="#Major_Versions" class="nav-link">Major Versions</a></li>
+    <li><a href="#Lists_and_Dictionaries" class="nav-link">Lists and Dictionaries</a></li>
+    <li><a href="#Lambda_and_Filter" class="nav-link">Lambda and Filter</a></li>
+    <li><a href="#Famous_applications_built_using_python" class="nav-link">Famous applications built using python</a></li>
+  </ul>
+</nav>
+<main id="main-section">
+  <section class="one" id="What_is_Python?">
+    <header>What is Python?</header>
+    <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+  </section>
+  <section class="two" id="History">
+    <header>History</header>
+    <p>The programming language Python was conceived in the late 1980s,and its implementation was started in December 1989 by Guido van Rossum at CWI in the Netherlands as a successor to ABC capable of exception handling and interfacing with the Amoeba operating system. Van Rossum is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, Benevolent Dictator for Life (BDFL). Python was named for the BBC TV show Monty Python's Flying Circus.</p>
+  </section>
+  <section class="three" id="Major_Versions">
+    <header>Major Versions</header>
+    <ul>
+      <li>Version 1</li>
+      <li>Version 2</li>
+      <li>Version 3</li>
+    </ul>
+    <h2>Version 1</h2>
+      <p>Python reached version 1.0 in January 1994. The major new features included in this release were the functional programming tools lambda, map, filter and reduce. Van Rossum stated that "Python acquired lambda, reduce(), filter() and map(), courtesy of a Lisp hacker who missed them and submitted working patches".</p>
+      <h2>Version 2</h2>
+      <p>Python 2.0 introduced list comprehensions, a feature borrowed from the functional programming languages SETL and Haskell. Python's syntax for this construct is very similar to Haskell's, apart from Haskell's preference for punctuation characters and Python's preference for alphabetic keywords. Python 2.0 also introduced a garbage collection system capable of collecting reference cycles.</p>
+        <h2>Version 3</h2>
+      <p>Python 3.0 (also called "Python 3000" or "Py3K") was released on December 3, 2008. It was designed to rectify fundamental design flaws in the language—the changes required could not be implemented while retaining full backwards compatibility with the 2.x series, which necessitated a new major version number. The guiding principle of Python 3 was: "reduce feature duplication by removing old ways of doing things".</p>
+  </section>
+          <section class="four" id="Lists_and_Dictionaries">
+    <header>Lists and Dictionaries</header>
+            <h2>Lists</h2>
+            <p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
+            <h3>Methods on list</h3>
+            <h4> list.append(x)</h4>
+<p>Add an item to the end of the list.</p>
+            <code>list.append(x) #inserts the element x at the end of thr list</code>
+            <h4>  list.insert(i, x)</h4>
+   <p>Insert an item at a given position.</p>
+            <code> list.insert(i, x) #inserts the element x at position i</code>
+            <h4>list.remove(x)</h4>
+    <p>Remove the first item from the list whose value is x. It is an error if there is no such item.</p>
+            <code>list.remove(x) #removes the element x from the list</code>
+            <h4> list.pop([i])</h4>
+    <p>Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list.</p>
+            <code>list.pop([i]) #removes the element at the position i from the list </code>
+            <h2>Dictionaries</h2>
+            <p>A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.</p>
+            <code>dict = { 'key1':'value1','key2':'value2','key3':'value3',.........}</code>
+            <h4> Accessing Value</h4>
+    <p>To access dictionary elements, you can use the familiar square brackets along with the key to obtain its value.</p>
+            <code>dict['key1'] #value corresponding to key1 value is selected from dictionary </code>
+            <h4>Updating Dictionary</h4>
+    <p>You can update a dictionary by adding a new entry or a key-value pair, modifying an existing entry, or deleting an existing entry as shown below in the simple example.</p>
+            <code>dict['key1'] = value1 #value1 corresponding to key1 value is updated to dictionary </code>
+            <h4>Length of the Dictionary</h4>
+    <p>Gives the total length of the dictionary. This would be equal to the number of items in the dictionary.</p>
+            <code> len(dict)</code>
+          </section>
+          <section class="five" id="Lambda_and_Filter">
+    <header>Lambda and Filter</header>
+            <h2>Lambda</h2>
+            <p>Small anonymous functions can be created with the lambda keyword. This function returns the sum of its two arguments: lambda a, b: a+b. Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition.</p>
+            <code>lambda arguments: expression #example: lambda x:x*x gives square of x</code>
+            <h2>Filter</h2>
+            <p>The filter() function in Python takes in a function and a list as arguments.
+The function is called with all the items in the list and a new list is returned which contains items for which the function evaluats to True</p>
+            <code>filter(lambda arguments:expression, list1) #this function returns a list derived from list1 whose elements satisfies true condition for the given function </code>
+            </section>
+          <section class="six" id="Famous_applications_built_using_python">
+    <header>Famous applications built using python</header>
+            <ul>
+              <li>Youtube</li>
+              <li>Dropbox</li>
+              <li>Google</li>
+              <li>Quora</li>
+              <li>Instagram</li>
+              <li>Bit-torrent</li>
+            </ul>
+            </section>        
+
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiU77Win8bbAhUHR48KHTdXCkgQFggoMAA&url=https%3A%2F%2Fwww.wikipedia.org%2F&usg=AOvVaw3ay7vaEtH0yTTYdDmrvinX">Wikipedia</a></li>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiJ5s2vn8bbAhWKvI8KHfL3BbgQFgg4MAA&url=https%3A%2F%2Fwww.python.org%2F&usg=AOvVaw0QREvGsjwHKp2GtoYvs1JH">Python</a></li>
+        </ul>
+          </main>
+        </body>
+  <h2 class="me">Created by Pavithra.B 9/06/2018</h2>
+
+        
